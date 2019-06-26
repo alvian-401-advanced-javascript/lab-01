@@ -1,8 +1,8 @@
-# LAB - 
+# LAB - 01 
 
 ## Project Name
 
-### Author: Student/Group Name
+### Author: Alvian Joseph
 
 ### Links and Resources
 * [submission PR](https://github.com/alvian-401-advanced-javascript/lab-01)

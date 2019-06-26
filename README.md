@@ -1,58 +1,56 @@
-# LAB: Node Ecosystem
+# LAB - 
 
-## Before You Begin
+## Project Name
 
-* Create a new git repository
+### Author: Student/Group Name
 
-* Copy the contents of this `lab` folder into that repository at the root level
+### Links and Resources
+* [submission PR](https://github.com/alvian-401-advanced-javascript/lab-01)
+* [![Build Status](https://www.travis-ci.com/alvian-401-advanced-javascript/lab-01.svg?branch=master)](https://www.travis-ci.com/alvian-401-advanced-javascript/lab-01)
+* [front-end](https://lab-demo.herokuapp.com/)
 
-* Initialize this lab folder as a new node module, install your dependencies, setup your npm script commands, and pull in your config files
+#### Documentation
+* [api docs](http://xyz.com) (API servers)
+* [jsdoc](http://xyz.com) (Server assignments)
+* [styleguide](http://xyz.com) (React assignments)
 
-* Setup the package.json file to run lint checks and tests against the greet and arithmetic modules
+### Modules
+#### `index.js`
+Sets up a node http server, pulls in the pol module
 
-#### Getting Started
-In the `start_code` folder, there is a partial implementation of both the arithmetic and greet modules.
+### 'app.js'
+proof of life module
 
-In the `root` folder, you'll find a file called `index.js` that wires in the arithmetic module and attempts to run functions imported from them.
+Exports one function called `isAlive()`
+* with param, returns false
+* without param, returns true
+##### Exported Values and Methods
 
-In the `__tests__` folder, you'll find a file called `arithmetic.test.js` that wires in the arithmetic module but does no tests.
+###### `foo(thing) -> string`
+Usage Notes or examples
 
-## Requirements
+###### `bar(array) -> array`
+Usage Notes or examples
 
-#### Implementation
-* Use the `index.js` file to both "greet" and perform "math" operations using the imported functions from the 2 modules
-* `console.log()` the return values
+### Setup
+#### `.env` requirements
+* `PORT` - Port Number
+* `MONGODB_URI` - URL to the running mongo instance/db
 
+#### Running the app
+* `npm start`
+* Endpoint: `/`
+  * Returns true or false
 
-#### Part 1: Arithmetic Module
+  
+#### Tests
+* How do you run tests?
+  * `npm test`
+  * `npm run lint`
 
-* Add support for multiply and divide (be careful to not divide by zero!)
-* Refactor the add, subtract, multiply to allow for an array of params so that you can do deeper calculations
-* DRY the code by externalizing any type checking or argument validation from your methods
+* What assertions were made?
+  * `isAlive()` returns true with no params
+* What assertions need to be / should be made?
 
-***Software Engineering Note!***
-*Externalizing type checking and argument validation is a good exersize in refactoring code*
-
----
-
-### Part 2: Greet Module
-Create a NodeJS module in the `lib` directory named `greet.js`.  This module should export a single function.
-* The `greet` function should have a single parameter (arity of one) that should expect a string as it's input
-* The `greet` function should return the input name, concatenated with "hello ": eg. ("hello susan")
-* The `greet` function should return `null` if the input is not a string
-
-## Testing
-*Arithmetic Module* 
-* Use the faker module to randomize input
-* Test each method for proper use (invoked with number arguments)
-* Test each method for improper use (invoked with one or more non-number arguments)
-
-*Greet Module*
-* Use the faker module to randomize input
-* Write a test that expects the greet module to return `null` when you supply non-string values
-* Write a test the expects the greet module to return `'hello world'`
-  * This should happen when invoked with `'world'` as the first argument
-
-
-### Assignemnt Submission Instructions
-Refer to the the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for the complete lab submission process and expectations
+#### UML
+Link to an image of the UML for your application and response to events

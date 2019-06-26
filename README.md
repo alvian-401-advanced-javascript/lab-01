@@ -27,6 +27,12 @@ Exports four math operator functions
 * arithmetic.divide
 * arithmetic.multiply 
 Each function performs the designated operation on an array of numbers
+
+### 'greet.js'
+greet module
+
+exports one function called `sayHello()`
+it takes in a string and returns a message
 ##### Exported Values and Methods
 
 ###### `foo(thing) -> string`

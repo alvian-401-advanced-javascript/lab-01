@@ -14,12 +14,19 @@
 #### `index.js`
 Sets up a node http server, pulls in the pol module
 
-### 'app.js'
-proof of life module
+### 'arithmetic.js'
+arithmetic module
 
-Exports one function called `isAlive()`
-* with param, returns false
-* without param, returns true
+Exports one function called `isValidInput()`
+* if param is an array of numbers, returns true
+* otherwise, returns true
+
+Exports four math operator functions
+* arithmetic.add
+* arithmetic.subtract
+* arithmetic.divide
+* arithmetic.multiply 
+Each function performs the designated operation on an array of numbers
 ##### Exported Values and Methods
 
 ###### `foo(thing) -> string`
@@ -30,8 +37,7 @@ Usage Notes or examples
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `PORT` - 3000
 
 #### Running the app
 * `npm start`
@@ -45,7 +51,7 @@ Usage Notes or examples
   * `npm run lint`
 
 * What assertions were made?
-  * `isAlive()` returns true with no params
+  * `sayHello()` returns null if param is not a string
 * What assertions need to be / should be made?
 
 #### UML

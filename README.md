@@ -7,12 +7,8 @@
 ### Links and Resources
 * [submission PR](https://github.com/alvian-401-advanced-javascript/lab-01)
 * [![Build Status](https://www.travis-ci.com/alvian-401-advanced-javascript/lab-01.svg?branch=master)](https://www.travis-ci.com/alvian-401-advanced-javascript/lab-01)
-* [front-end](https://lab-demo.herokuapp.com/)
+* [front-end](https://alvian-lab-01.herokuapp.com/)
 
-#### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
 
 ### Modules
 #### `index.js`
